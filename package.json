@@ -1,0 +1,26 @@
+{
+	"name": "react-playground",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "npm run devserver",
+		"clean": "rimraf -rf public/dist/",
+		"dist": "webpack",
+		"devserver": "webpack-dev-server --content-base public/"
+	},
+	"dependencies": {
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1"
+	},
+	"devDependencies": {
+		"babel-core": "^6.25.0",
+		"babel-loader": "^7.1.1",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-react": "^6.24.1",
+		"jest": "^20.0.4",
+		"rimraf": "^2.6.1",
+		"webpack": "2",
+		"webpack-dev-server": "2"
+	}
+}
